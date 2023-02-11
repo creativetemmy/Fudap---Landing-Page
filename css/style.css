@@ -1,0 +1,386 @@
+/* --Font Sizes  (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98  */
+
+/*/////////// BASE SETUP  /////////////*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font size: 10px; */
+  /* 10px / 16px = 62.5% */
+  /* Percentage of user's browser font-size stting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+}
+
+/* **********GENERAL REUSABLE COMPONENTS********* */
+
+.heading-primary {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.btn {
+  background-color: #fd264f;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1.6rem;
+  border-radius: 15px;
+  align-items: center;
+}
+
+.margin-right-download {
+  margin-right: 1.2rem;
+}
+
+.container {
+  /* 1140px */
+
+  /* padding: 0 3.2rem; */
+  margin: 0 auto;
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  max-width: 120rem;
+  margin: 0 auto;
+  gap: 2.4rem;
+}
+
+/* //////////// HEADER //////////// */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcdae1;
+
+  /* Because we want it to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/* //////////// NAVIGATION BAR //////////// */
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #000;
+}
+/* ///////////////HERO SECTION////////////// */
+
+.section-hero {
+  background-color: #fcdae1;
+  padding: 4.8rem 0 0 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem 0;
+  /* align-items: center; */
+}
+
+.hero-text-box {
+  text-align: center;
+  margin-top: 6.8rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 8.8rem;
+}
+
+.margin-right-download {
+  margin-right: 1.2rem;
+}
+
+.download-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-right: 0.3rem;
+  align-self: center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/* ///////////////VENDOR SECTION////////////// */
+
+.section-vendor {
+  padding: 8.6rem 0;
+  background-color: #fdfdfd;
+}
+
+.subheading {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 4.4rem;
+  color: #1f1d1d;
+}
+
+.vendor-text {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.img-vendor {
+  width: 50%;
+  padding: 0 1.4rem;
+  border-radius: 35px;
+}
+
+/* ///////////////RIDER SECTION////////////// */
+
+.section-rider {
+  padding: 8.6rem 0;
+  background-color: #fdf2e9;
+}
+
+.rider-text {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.img-rider {
+  width: 50%;
+  padding: 0 1.4rem;
+  border-radius: 35px;
+}
+
+.btn-start {
+  background-color: #fd264f;
+  display: inline-block;
+  margin: auto;
+  padding: 1.6rem 4.8rem;
+  border-radius: 9px;
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  /* Put transition on original "state */
+  transition: all 0.3s;
+}
+
+.start-text {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  align-items: center;
+}
+
+/* ///////////////RIDER SECTION////////////// */
+
+.section-pickup {
+  padding: 9.6rem 0;
+  background-color: #fd264f;
+}
+
+.subheading-pickup {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 5.2rem;
+  color: #fff;
+}
+
+.pickup-text {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+}
+
+.btn-instant {
+  background-color: #fd264f;
+  color: #fff;
+  display: inline-block;
+  padding: 1.6rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  border-radius: 15px;
+  align-items: center;
+  border: 1px solid #fff;
+}
+
+/* ///////////////FAQ SECTION////////////// */
+
+.section-faq {
+  padding: 9.6rem 0;
+  background-color: #fdfdfd;
+}
+
+.subheading-faq {
+  font-size: 3.6rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5.2rem;
+  color: #1f1d1d;
+}
+
+.faq {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 35rem;
+  justify-content: space-around;
+}
+
+details {
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-radius: 7px;
+  margin-top: 2rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  line-height: -10px;
+  border: 2px solid #fe93a7;
+  cursor: pointer;
+}
+
+/* ::marker-details-marker {
+  content: '+';
+} */
+
+.text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-top: 2rem;
+}
+/* ///////////////FOOTER SECTION////////////// */
+
+.section-footer {
+  padding: 7.4rem 0;
+  background-color: #fd264f;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1.5fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  display: block;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #fff;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.7;
+}
+
+.address {
+  color: #fff;
+  margin-bottom: 2.4rem;
+}
+
+.footer-contacts {
+  color: #fff;
+}
+
+.footer.address {
+  margin-bottom: 2.4rem;
+  color: #fff;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #fe6784;
+}
+
+/* ////////////////TEST////// */
