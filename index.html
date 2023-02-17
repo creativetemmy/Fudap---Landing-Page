@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="icon" href="img/favicon.png" />
+
+    <meta
+      name="description"
+      content="Fudap is an online food delivery for restaurants and vendors. Riders ensures food vendors gets their order delivered to their customer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,21 +21,36 @@
 
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="/css/queries.css" />
 
-    <title>Fudap - Delivering Comfort</title>
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
+    "
+    ></script>
+    <script defer src="/js/script.js"></script>
+
+    <title>Fudap &mdash; Delivering Comfort</title>
   </head>
   <body>
-    <header class="header">
-      <img class="logo" src="/img/fudap-logo.png" alt="Fudap logo" />
+    <header class="header sticky">
+      <a href="#">
+        <img class="logo" src="/img/fudap-logo.png" alt="Fudap logo"
+      /></a>
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">Vendors</a></li>
-          <li><a class="main-nav-link" href="#">Riders</a></li>
-          <li><a class="main-nav-link" href="#">Faqs</a></li>
-          <li><a class="main-nav-link" qhref="#">Blog</a></li>
+          <li><a class="main-nav-link" href="#vdn">Vendors</a></li>
+          <li><a class="main-nav-link" href="#rdr">Riders</a></li>
+          <li><a class="main-nav-link" href="#fqq">Faqs</a></li>
+          <li><a class="main-nav-link" href="#">Blog</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon name="menu-outline" class="icon-mobile-nav"></ion-icon>
+        <ion-icon name="close-outline" class="icon-mobile-nav"></ion-icon>
+      </button>
     </header>
 
     <main>
@@ -56,7 +78,7 @@
       </section>
     </main>
 
-    <section class="section-vendor">
+    <section class="section-vendor" id="vdn">
       <div class="grid">
         <h3 class="subheading">Vendors</h3>
         <p class="vendor-text">
@@ -71,7 +93,7 @@
       </div>
     </section>
 
-    <section class="section-rider">
+    <section class="section-rider" id="rdr">
       <div class="grid">
         <h3 class="subheading">Earn as Pilot</h3>
         <p class="rider-text">
@@ -111,7 +133,7 @@
       </div>
     </section>
 
-    <section class="section-faq">
+    <section class="section-faq" id="fqq">
       <h3 class="subheading-faq">FAQs</h3>
       <div class="faq">
         <details>
@@ -188,7 +210,7 @@
           </ul>
 
           <p class="copyright">
-            Copyright &copy; <span class="year">2023</span> by Fudap Limited.
+            Copyright &copy; <span class="year">2003</span> by Fudap Limited.
             All right reserved.
           </p>
         </div>
