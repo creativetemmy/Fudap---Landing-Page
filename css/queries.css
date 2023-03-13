@@ -93,6 +93,7 @@ Instead 1rem = 1em = 16px */
   }
 
   .section-footer {
+    grid-template-columns: 1fr 1fr;
     padding: 7.4rem 3.2rem;
   }
 }
@@ -104,6 +105,15 @@ Instead 1rem = 1em = 16px */
   html {
     /* 8px / 16px = 0.5 = 50% */
     font-size: 50%;
+  }
+
+  .faq {
+    margin: 2rem;
+    /* display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around; */
   }
 }
 
@@ -205,6 +215,16 @@ Instead 1rem = 1em = 16px */
   .main-nav-link:link,
   .main-nav-link:visited {
     font-size: 3rem;
+  }
+}
+
+/* ************************************************ */
+/* BELOW 380px (Phones ) */
+/*************************************************** */
+
+@media (max-width: 23.75em) {
+  .grid--footer {
+    grid-template-columns: 1.5fr 1.5fr;
   }
 }
 
